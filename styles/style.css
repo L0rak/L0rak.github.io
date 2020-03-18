@@ -19,7 +19,18 @@ h2 {
 }
 
 .kolorowe {
-	color: #03DAC6
+	color: #03DAC6;
+}
+table {
+	border-collapse: collapse;
+}
+
+.tabelka {
+		width: 100%;
+		border: 1 solid #fff;
+		border-width: 0 1px;
+		border-spacing: 0px;
+		text-align: center;
 }
 
 img {
