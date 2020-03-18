@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html style="font-family: 'Spartan', sans-serif; font-size: 20px;">
+<head>
+	<title>Karol Brodowicz</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</head>
+<body>
+	
+	<div class="header">
+		<h1>Historia efektów specjalnych w filmach Sci-Fi</h1>
+		<h2>Karol Brodowicz</h2>
+	</div>
+
+	<div class="topnav">
+		<a href="index.html">Strona główna</a>
+		<a href="part1.html">Lata 70'</a>
+		<a href="part2.html">Lata 00'</a>
+		<a href="part3.html">Lata 20'</a>
+		<a href="galeria.html">Galeria</a>
+	</div>
+<br> <br>
+	<div class="body">
+		<div style="text-align:center">
+  <h1>Galeria</h1>
+  <p>Naciśnij zdjęcia poniżej:</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="img/1_modele.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/2_modele.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/3_modele.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="img/4_modele.gif" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/5_modele.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jarjar.gif" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="img/plany.gif" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/blue-screen.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/real-screen.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</div>
+<br>
+
+	<footer class="footer">
+  	<p>Karol Brodowicz 1pta</p>
+  	</footer>
+ 
+</body>
+</html>
